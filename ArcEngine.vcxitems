@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{5badb22f-4629-4da0-9102-b8c2d9652c6a}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\VidyaGame\camera.h" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)engine.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)event_handler.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)transform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\VidyaGame\color_list.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\VidyaGame\event_handler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)engine.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)global.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)rendering.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)vector.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)vmath.h" />
+  </ItemGroup>
+</Project>

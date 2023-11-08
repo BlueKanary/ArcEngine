@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{851be299-f870-4a94-8f4e-413e67be6e73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{ad7cb36e-8936-41a3-9fdd-6b40bcbf5b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lists">
+      <UniqueIdentifier>{d4f5416c-5915-4068-802d-45d00ac2a2de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{b7f6a634-13b3-49df-92a2-851602a772c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Physics">
+      <UniqueIdentifier>{b5d7385e-36a2-457c-a2ab-0e4381596381}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\VidyaGame\color_list.h">
+      <Filter>Header Files\Lists</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\VidyaGame\event_handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)global.h">
+      <Filter>Header Files\Lists</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)vector.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)vmath.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)rendering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\VidyaGame\camera.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)transform.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)event_handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
