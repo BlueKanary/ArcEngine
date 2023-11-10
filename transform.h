@@ -8,7 +8,13 @@ struct transform { // The point to transform from and by how much. Think of a hi
 	vector scale;
 	float rotation; // Degrees
 
-	transform(vector position, vector scale, float rotation);
+	transform(vector position, vector scale, float rotation) {
+
+		transform::position = position;
+		transform::scale = scale;
+		transform::rotation = rotation;
+	}
+
 	transform();
 
 };

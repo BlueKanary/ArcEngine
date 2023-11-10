@@ -2,16 +2,16 @@
 
 struct vector {
 
-	float x;
-	float y;
+	float x = 0;
+	float y = 0;
 
 	vector(float x, float y) { this->x = x; this->y = y; }
-	vector();
+	vector() {}
 
 	vector friend operator + (vector const& vec1, vector const& vec2) { // Addition, Subtraction operators
 		return vector(vec1.x + vec2.x, vec1.y + vec2.y);
 	}
-	void friend operator += (vector &vec1, vector const& vec2) { // Addition, Subtraction operators
+	void friend operator += (vector &vec1, vector const& vec2) {
 		(vec1.x += vec2.x, vec1.y += vec2.y);
 	}
 	vector operator - (vector const& vec) { // Negative operator
