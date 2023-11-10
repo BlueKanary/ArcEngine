@@ -14,17 +14,16 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\VidyaGame\camera.h" />
     <ClCompile Include="$(MSBuildThisFileDirectory)engine.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)event_handler.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)transform.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\VidyaGame\color_list.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\VidyaGame\event_handler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)camera.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)color_list.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)engine.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)event_handler.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)global.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)rendering.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)vector.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)vmath.h" />
   </ItemGroup>

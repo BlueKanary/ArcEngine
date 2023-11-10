@@ -14,19 +14,19 @@ event event_handler(ALLEGRO_EVENT_QUEUE* event_queue, event ev) {
 			switch (al_event.keyboard.keycode) {
 
 			case ALLEGRO_KEY_UP:		// MOVEMENT codes are used for determining movement directions and menu selectors
-				ev.type = "MENU_UP";
+				ev.type = "MOVEMENT";
 				ev.held_keys[KEY_UP] = true;
 				break;
 			case ALLEGRO_KEY_DOWN:
-				ev.type = "MENU_DOWN";
+				ev.type = "MOVEMENT";
 				ev.held_keys[KEY_DOWN] = true;
 				break;
 			case ALLEGRO_KEY_LEFT:
-				ev.type = "MENU_LEFT";
+				ev.type = "MOVEMENT";
 				ev.held_keys[KEY_LEFT] = true;
 				break;
 			case ALLEGRO_KEY_RIGHT:
-				ev.type = "MENU_RIGHT";
+				ev.type = "MOVEMENT";
 				ev.held_keys[KEY_RIGHT] = true;
 				break;
 
@@ -67,6 +67,35 @@ event event_handler(ALLEGRO_EVENT_QUEUE* event_queue, event ev) {
 					ev.held_keys[KEY_X] = false;
 					break;
 			}
+		}
+
+		// Mouse Events
+		if (al_event.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN) {
+
+			switch (al_event.mouse.button) {
+
+				case 1:	
+					ev.held_keys[MOUSE_1] = true;
+				case 2:
+					ev.held_keys[MOUSE_2] = true;
+			}
+		}
+
+		if (al_event.type == ALLEGRO_EVENT_MOUSE_BUTTON_UP) {
+
+			switch (al_event.mouse.button) {
+
+				case 1:
+					ev.held_keys[MOUSE_1] = false;
+				case 2:
+					ev.held_keys[MOUSE_2] = false;
+			}
+		}
+
+		if (al_event.type == ALLEGRO_EVENT_MOUSE_AXES) {
+
+			ev.mouse = al_event.mouse;
+
 		}
 
 		if (al_event.type == ALLEGRO_EVENT_DISPLAY_CLOSE) { // Alternative exit code. Will replace with a QUIT code for ending process

@@ -54,11 +54,9 @@ namespace vmath {
 
 	static vector transform_vector(vector vec, transform t, vector position) {
 
-		vector pivot = position + t.position;
-
-		return vector( // Takes the relative position, adds vector x - "hinge" x * rotation, add/sub vector y - "hinge" y * rotation
-			pivot.x + (vec.x - pivot.x) * std::cos(t.rotation) - (vec.y - pivot.y) * std::sin(t.rotation),
-			pivot.y + (vec.x - pivot.x) * std::sin(t.rotation) + (vec.y - pivot.y) * std::cos(t.rotation)
+		return vector(
+			position.x + (vec.x - position.x) * std::cos(t.rotation) - (vec.y - position.y) * std::sin(t.rotation),
+			position.y + (vec.x - position.x) * std::sin(t.rotation) + (vec.y - position.y) * std::cos(t.rotation)
 		);
 	}
 
