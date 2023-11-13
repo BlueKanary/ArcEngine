@@ -6,15 +6,17 @@ class camera {
 	
 public:
 
-	vector position = V_ZERO;
+	int x;
+	int y;
 	float zoom = 1;
 
-	int width = 0;
-	int height = 0;
+	int width;
+	int height;
 
-	camera(vector position, int width, int height) {
+	camera(int x, int y, int width, int height) {
 
-		camera::position = position;
+		camera::x = x;
+		camera::y = y;
 		camera::width = width;
 		camera::height = height;
 

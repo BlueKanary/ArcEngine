@@ -24,6 +24,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)engine.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)event_handler.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)global.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)user_interface.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)vector.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)vmath.h" />
   </ItemGroup>

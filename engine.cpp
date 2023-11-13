@@ -43,3 +43,14 @@ void engine::create_event_stream() {
 	al_start_timer(tick);
 
 }
+
+void engine::event_resolution(event &ev) {
+
+	ev = event_handler(event_queue, ev);
+
+	if (ev.pressed || ) { // Shut Down
+
+		return;
+	}
+
+}
