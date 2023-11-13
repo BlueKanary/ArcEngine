@@ -1,5 +1,7 @@
 #pragma once
 
+#include "event_handler.h"
+
 #include <allegro5/allegro.h>
 
 void initialize_allegro();

@@ -39,6 +39,9 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)color_list.h">
       <Filter>Header Files\Lists</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)user_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)transform.h">
