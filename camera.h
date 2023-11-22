@@ -1,24 +1,18 @@
 #pragma once
 
-#include "vector.h"
-
 class camera {
 	
 public:
 
 	int x;
 	int y;
-	float zoom = 1;
+	float zoom;
 
-	int width;
-	int height;
-
-	camera(int x, int y, int width, int height) {
+	camera(int x, int y, float z = 1) {
 
 		camera::x = x;
 		camera::y = y;
-		camera::width = width;
-		camera::height = height;
+		camera::zoom = z;
 
 	}
 
