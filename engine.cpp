@@ -7,8 +7,7 @@
 #include <allegro5/allegro_font.h>
 #include <allegro5/allegro_ttf.h>
 
-
-void initialize_allegro() {
+void engine::initialize_allegro() {
 
 	al_init();
 
@@ -25,7 +24,7 @@ void initialize_allegro() {
 void engine::create_display() {
 
 	display = al_create_display(WINDOW_WIDTH, WINDOW_HEIGHT);
-	al_set_display_flag(display, ALLEGRO_WINDOWED, true);
+	al_set_display_flag(display, ALLEGRO_FULLSCREEN_WINDOW, true);
 
 }
 
@@ -44,13 +43,3 @@ void engine::create_event_stream() {
 
 }
 
-void engine::event_resolution(event &ev) {
-
-	ev = event_handler(event_queue, ev);
-
-	if (ev.pressed || ) { // Shut Down
-
-		return;
-	}
-
-}

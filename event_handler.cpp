@@ -11,9 +11,9 @@ void event_handler(ALLEGRO_EVENT_QUEUE* event_queue, event &ev) {
 
 		if (al_event.type == ALLEGRO_EVENT_KEY_DOWN) { // Keyboard Events
 
-			switch (al_event.keyboard.keycode) {
+			ev.pressed = true;
 
-				ev.pressed = true;
+			switch (al_event.keyboard.keycode) {
 
 			case ALLEGRO_KEY_UP:		// MOVEMENT codes are used for determining movement directions and menu selectors
 				ev.held_keys[KEY_UP] = true;
@@ -27,12 +27,83 @@ void event_handler(ALLEGRO_EVENT_QUEUE* event_queue, event &ev) {
 			case ALLEGRO_KEY_RIGHT:
 				ev.held_keys[KEY_RIGHT] = true;
 				break;
-
-			case ALLEGRO_KEY_Z:
-				ev.held_keys[KEY_Z] = true;
+			case ALLEGRO_KEY_A:
+				ev.held_keys[KEY_A] = true;
+				break;
+			case ALLEGRO_KEY_B:
+				ev.held_keys[KEY_B] = true;
+				break;
+			case ALLEGRO_KEY_C:
+				ev.held_keys[KEY_C] = true;
+				break;
+			case ALLEGRO_KEY_D:
+				ev.held_keys[KEY_D] = true;
+				break;
+			case ALLEGRO_KEY_E:
+				ev.held_keys[KEY_E] = true;
+				break;
+			case ALLEGRO_KEY_F:
+				ev.held_keys[KEY_F] = true;
+				break;
+			case ALLEGRO_KEY_G:
+				ev.held_keys[KEY_G] = true;
+				break;
+			case ALLEGRO_KEY_H:
+				ev.held_keys[KEY_H] = true;
+				break;
+			case ALLEGRO_KEY_I:
+				ev.held_keys[KEY_I] = true;
+				break;
+			case ALLEGRO_KEY_J:
+				ev.held_keys[KEY_J] = true;
+				break;
+			case ALLEGRO_KEY_K:
+				ev.held_keys[KEY_K] = true;
+				break;
+			case ALLEGRO_KEY_L:
+				ev.held_keys[KEY_L] = true;
+				break;
+			case ALLEGRO_KEY_M:
+				ev.held_keys[KEY_M] = true;
+				break;
+			case ALLEGRO_KEY_N:
+				ev.held_keys[KEY_N] = true;
+				break;
+			case ALLEGRO_KEY_O:
+				ev.held_keys[KEY_O] = true;
+				break;
+			case ALLEGRO_KEY_P:
+				ev.held_keys[KEY_P] = true;
+				break;
+			case ALLEGRO_KEY_Q:
+				ev.held_keys[KEY_Q] = true;
+				break;
+			case ALLEGRO_KEY_R:
+				ev.held_keys[KEY_R] = true;
+				break;
+			case ALLEGRO_KEY_S:
+				ev.held_keys[KEY_S] = true;
+				break;
+			case ALLEGRO_KEY_T:
+				ev.held_keys[KEY_T] = true;
+				break;
+			case ALLEGRO_KEY_U:
+				ev.held_keys[KEY_U] = true;
+				break;
+			case ALLEGRO_KEY_V:
+				ev.held_keys[KEY_V] = true;
+				break;
+			case ALLEGRO_KEY_W:
+				ev.held_keys[KEY_W] = true;
 				break;
 			case ALLEGRO_KEY_X:
 				ev.held_keys[KEY_X] = true;
+				break;
+			case ALLEGRO_KEY_Y:
+				ev.held_keys[KEY_Y] = true;
+				break;
+			case ALLEGRO_KEY_Z:
+				ev.held_keys[KEY_Z] = true;
 				break;
 
 			case ALLEGRO_KEY_ESCAPE:

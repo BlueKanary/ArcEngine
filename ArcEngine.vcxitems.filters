@@ -13,7 +13,10 @@
     <Filter Include="Resource Files">
       <UniqueIdentifier>{b7f6a634-13b3-49df-92a2-851602a772c8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Physics">
+    <Filter Include="Header Files\Structs">
+      <UniqueIdentifier>{8499259c-d342-422d-bff6-f5a2523308ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\2D Physics">
       <UniqueIdentifier>{b5d7385e-36a2-457c-a2ab-0e4381596381}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -24,28 +27,40 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)global.h">
       <Filter>Header Files\Lists</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)vector.h">
-      <Filter>Header Files\Physics</Filter>
+    <ClInclude Include="$(MSBuildThisFileDirectory)vector2.h">
+      <Filter>Header Files\2D Physics</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)vmath.h">
-      <Filter>Header Files\Physics</Filter>
+    <ClInclude Include="$(MSBuildThisFileDirectory)vmath2.h">
+      <Filter>Header Files\2D Physics</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)event_handler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)color_list.h">
       <Filter>Header Files\Lists</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)camera.h">
+      <Filter>Header Files\Structs</Filter>
+    </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)user_interface.h">
+      <Filter>Header Files\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)game_state.h">
+      <Filter>Header Files\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)entity.h">
+      <Filter>Header Files\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)rendering.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)transform.h">
-      <Filter>Header Files\Physics</Filter>
+    <ClCompile Include="$(MSBuildThisFileDirectory)transform2.h">
+      <Filter>Header Files\2D Physics</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)engine.cpp">
       <Filter>Source Files</Filter>

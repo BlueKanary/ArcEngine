@@ -16,16 +16,20 @@
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)engine.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)event_handler.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)transform.h" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)transform2.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)camera.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)color_list.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)engine.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)entity.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)event_handler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)game.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)game_state.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)global.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)rendering.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)user_interface.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)vector.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)vmath.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)vector2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)vmath2.h" />
   </ItemGroup>
 </Project>
